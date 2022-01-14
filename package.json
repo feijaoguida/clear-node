@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --passWithNoTests --watch"
+    "test": "jest --passWithNoTests --silent --watch --runInBand",
+    "test:verbose": "jest --passWithNoTests --watch --runInBand",
+    "test:ci": "jest -- --coverage"
   },
   "keywords": [],
   "author": "",
